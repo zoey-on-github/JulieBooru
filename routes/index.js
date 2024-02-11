@@ -7,7 +7,4 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-app.post('/', (req, res) => {
-	res.send("nice POST request loser")
-})
 module.exports = router;

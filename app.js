@@ -40,9 +40,6 @@ app.use(function(err, req, res, next) {
 app.use(express.static('public'))
 
 
-app.post('/users', (req, res) => {
-	res.send("nice POST request loser")
-})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
