@@ -23,7 +23,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.post('/', (req, res) => {
-  res.send('Got a POST request')
+  res.send('nice POST request loser')
 })
 
 // error handler
