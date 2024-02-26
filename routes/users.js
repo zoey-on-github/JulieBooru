@@ -11,11 +11,13 @@ router.post('/', function(req,res,next)  {
 	res.send("new user i guess");
 
 })
-db.one('SELECT epicness_count FROM users;')
-  .then((data) => {
-    console.log('DATA:', data.value)
-  })
-  .catch((error) => {
-    console.log('ERROR:', error)
-  })
+testCommand(epicnessCount) {
+	return this.db.oneOrNone('Select epicness_Count FROM $1', users, a => !!a);
+}
+db.testCommand()
+	.then(exists => {
+		console.log("yeah");
+	})
+	.catch(error => {
+	});
 module.exports = router;
