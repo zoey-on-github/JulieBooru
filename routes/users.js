@@ -9,15 +9,14 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req,res,next)  {
 	res.send("new user i guess");
-
+        db.any()
 })
-testCommand(epicnessCount) {
-	return this.db.oneOrNone('Select epicness_Count FROM $1', users, a => !!a);
-}
-db.testCommand()
-	.then(exists => {
-		console.log("yeah");
-	})
-	.catch(error => {
-	});
+
+db.any('select * from users where active = $1', [true])
+    .then(data => {
+        console.log('DATA:', data); // print data;
+    })
+    .catch(error => {
+        console.log('ERROR:', error); // print the error;
+    });
 module.exports = router;
