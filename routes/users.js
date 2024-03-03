@@ -8,8 +8,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req,res,next)  {
-	res.send("new user i guess");
-        db.any()
+	//res.send("new user i guess");
+        db.any('select * from users where active = $1', [true])
+            .then(data => {
+                res.status(200).send('DATA:', data); // print data;
+            })
+            .catch(error => {
+                res.status(200).send('ERROR:', error); // print the error;
+            });
 })
 
 db.any('select * from users where active = $1', [true])
