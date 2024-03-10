@@ -1,11 +1,11 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+import createError = require('http-errors');
+import express from 'express';
+import { RequestHandler } from 'express'
+import path = require('path');
+import cookieParser = require('cookie-parser');
+import logger = require('morgan');
+import indexRouter = require('./routes/index');
+import usersRouter = require('./routes/users');
 
 var app = express();
 
@@ -27,7 +27,7 @@ app.post('/', (req, res) => {
 })
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function(err, req: express.Request, res: express.Response, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -38,7 +38,6 @@ app.use(function(err, req, res, next) {
 });
 
 app.use(express.static('public'))
-
 
 
 // catch 404 and forward to error handler

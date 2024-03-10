@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "./backend/built",
+    "allowJs": true,
+    "target": "es6",
+    "esModuleInterop": true
+  },
+  "include": ["./backend/**/*"]
+}

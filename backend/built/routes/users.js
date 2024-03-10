@@ -1,14 +1,12 @@
-var express = require('express');
 var router = express.Router();
-const pgp = require('pg-promise')();
-const db = pgp('postgres://postgres:admin@localhost:5432/julieBooru')
+// const db = pgp('postgres://postgres:admin@localhost:5432/julieBooru')
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.status(300).send('respond with a resource');
+router.get('/', function (req, res, next) {
+    res.status(300).send('respond with a resource');
 });
-
+/*
 router.post('/', function(req,res,next)  {
-	//res.send("new user i guess");
+    //res.send("new user i guess");
         db.any('select * from users where active = $1', [true])
             .then(data => {
                 console.log("no error")
@@ -31,5 +29,4 @@ db.any('select * from users where active = $1', [true])
     });
     */
 module.exports = router;
-
-
+export {};
