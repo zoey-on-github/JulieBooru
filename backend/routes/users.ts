@@ -1,6 +1,6 @@
 import express = require('express');
 var router = express.Router();
-import pgp = require('pg-promise');
+//import pgp = require('pg-promise');
 // const db = pgp('postgres://postgres:admin@localhost:5432/julieBooru')
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -30,6 +30,7 @@ db.any('select * from users where active = $1', [true])
         console.log('ERROR:', error); // print the error;
     });
     */
-module.exports = router;
+//module.exports = router;
+export = router
 
 
