@@ -3,7 +3,8 @@
     "outDir": "./backend/built",
     "allowJs": true,
     "target": "es6",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "module":"commonjs"
   },
   "include": ["./backend/**/*"]
 }
