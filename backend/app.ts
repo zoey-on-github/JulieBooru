@@ -44,4 +44,4 @@ app.use(function(req, res, next) {
 });
 
 //module.exports = app;
-export = app;
+export default { app: app};
