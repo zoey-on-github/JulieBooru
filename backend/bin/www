@@ -11,9 +11,19 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
+<<<<<<< HEAD
 import  app  from '../built/app.js';
 import  debug  from 'debug';
 import  http  from 'http';
+||||||| parent of bfeae25 (dont work rn)
+import  app  from '../built/app.js';
+import { debug } from 'debug';
+import { http } from 'http';
+=======
+import { app }  from '../app.ts';
+import { debug } from 'debug';
+import { http } from 'http';
+>>>>>>> bfeae25 (dont work rn)
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
