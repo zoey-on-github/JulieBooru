@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./backend/built",
+    "outDir": "backend/built",
     "allowJs": true,
     "target": "es6",
     "allowImportingTsExtensions": true,
@@ -8,5 +8,5 @@
     "noEmit": true,
     "module":"Node16"
   },
-  "include": ["./backend/**/*"]
+  "include": ["backend/**/*"]
 }
