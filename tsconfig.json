@@ -3,8 +3,10 @@
     "outDir": "./backend/built",
     "allowJs": true,
     "target": "es6",
-    "esModuleInterop": true,
-    "module":"commonjs"
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "module":"Node16"
   },
   "include": ["./backend/**/*"]
 }

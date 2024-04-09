@@ -3,8 +3,8 @@ import express, { RequestHandler } from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-import indexRouter from './routes/index';
-import usersRouter from './routes/users';
+import indexRouter from './routes/index.ts';
+import usersRouter from './routes/users.ts';
 var app = express();
 
 // view engine setup
@@ -43,5 +43,4 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-//module.exports = app;
-export default { app: app};
+export default app;

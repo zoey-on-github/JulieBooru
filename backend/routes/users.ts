@@ -31,6 +31,6 @@ db.any('select * from users where active = $1', [true])
     });
     */
 //module.exports = router;
-export = router
+export default router
 
 

@@ -38,5 +38,4 @@ app.use(express_1.default.static('public'));
 app.use(function (req, res, next) {
     next((0, http_errors_1.default)(404));
 });
-//module.exports = app;
-exports.default = { app: app };
+export default app;
