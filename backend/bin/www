@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('../built/app.js');
 var debug = require('debug')('juliebooru:server');
 var http = require('http');
 
