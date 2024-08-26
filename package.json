@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 {
   "dependencies": {
     "typescript": "^5.4.4"
   }
 }
+||||||| 2231ae7
+=======
+{
+  "dependencies": {
+    "typescript": "^5.5.4"
+  }
+}
+>>>>>>> main

@@ -3,8 +3,16 @@
 /**
  * Module dependencies.
  */
+<<<<<<< HEAD
 /*
 var app = require('../built/app');
+||||||| 2231ae7
+
+var app = require('../app');
+=======
+
+var app = require('../built/app.js');
+>>>>>>> main
 var debug = require('debug')('juliebooru:server');
 var http = require('http');
 /*
