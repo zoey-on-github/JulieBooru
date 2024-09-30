@@ -3,41 +3,12 @@
 /**
  * Module dependencies.
  */
-<<<<<<< HEAD
-/*
-var app = require('../built/app');
-||||||| 2231ae7
-
-var app = require('../app');
-=======
-
-var app = require('../built/app.js');
->>>>>>> main
-var debug = require('debug')('juliebooru:server');
-var http = require('http');
-/*
 /**
  * Get port from environment and store in Express.
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
 import  app  from '../built/app.js';
 import  debug  from 'debug';
 import  http  from 'http';
-||||||| parent of bfeae25 (dont work rn)
-import  app  from '../built/app.js';
-import { debug } from 'debug';
-import { http } from 'http';
-=======
-import { app }  from '../app.ts';
-||||||| parent of 8241a1e (jifew)
-import { app }  from '../app.ts';
-=======
-import  app   from '../app.ts';
->>>>>>> 8241a1e (jifew)
-import { debug } from 'debug';
-import { http } from 'http';
->>>>>>> bfeae25 (dont work rn)
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
