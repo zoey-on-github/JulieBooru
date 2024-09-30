@@ -6,7 +6,7 @@
    "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
-    "module":"Node16"
+    "module":"nodeNext"
   },
   "include": ["backend/**/*"]
 }
