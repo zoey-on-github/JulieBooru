@@ -4,7 +4,6 @@
     "allowJs": true,
     "target": "es6",
    "allowImportingTsExtensions": true,
-    "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "module":"nodeNext"
   },
